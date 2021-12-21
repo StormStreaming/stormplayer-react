@@ -1,0 +1,14 @@
+/node_modules
+.DS_Store
+.idea
+/build/*
+!/build/.gitkeep
+/.idea/*
+.git
+.history
+/.history/* 
+dist
+/dist
+.yalc
+/.yalc
+.yalc.lock
