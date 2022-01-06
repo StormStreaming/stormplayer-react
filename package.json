@@ -1,11 +1,33 @@
 {
-  "version": "1.0.1",
   "name": "@stormstreaming/stormplayer-react",
-  "author": "Web-Anatomy",
-  "license": "SEE LICENSE IN LICENSE",
+  "version": "1.0.0",
+  "description": "Dedicated StormPlayer component for React.js",
+  "private": false,
+  "author": "Web-Anatomy s.c. <contact@web-anatomy.com>",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "*"
+  ],
+  "license": "SEE LICENSE IN LICENSE.txt",
   "repository": {
     "type": "git",
     "url": "https://github.com/StormStreaming/stormplayer-react"
+  },
+  "homepage": "https://github.com/StormStreaming/stormlibrary-react#readme",
+  "keywords": [
+    "stormstreaming",
+    "web",
+    "video",
+    "player",
+    "library",
+    "react",
+    "low-latency",
+    "live-streaming"
+  ],
+  "bugs": {
+    "url": "https://github.com/StormStreaming/stormplayer-react/issues"
   },
   "scripts": {
     "clear": "rm -rf dist",
@@ -28,8 +50,8 @@
     "@material-ui/lab": "4.0.0-alpha.57",
     "@material-ui/pickers": "^3.3.10",
     "@reduxjs/toolkit": "^1.6.2",
-    "@stormstreaming/storm-player": "file:.yalc/@stormstreaming/storm-player",
-    "@stormstreaming/stormlibrary": "file:.yalc/@stormstreaming/stormlibrary",
+    "@stormstreaming/stormplayer": "^2.0.0",
+    "@stormstreaming/stormlibrary": "^2.0.0",
     "dompurify": "^2.3.3",
     "final-form": "^4.20.2",
     "moment-timezone": "^0.5.33",
@@ -37,7 +59,8 @@
     "react-final-form": "^6.5.3",
     "react-redux": "^7.2.5",
     "react-select": "^3.0.8",
-    "validate.js": "^0.13.1"
+    "validate.js": "^0.13.1",
+    "yarn": "^1.22.17"
   },
   "peerDependencies": {
     "react": ">=17.x",
@@ -99,11 +122,8 @@
     "tspath": "^1.3.7",
     "typescript": "^4.3.5"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
-  "files": [
-    "*"
-  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "browserslist": "> 0.25%, not dead"
 }

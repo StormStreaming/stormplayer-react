@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import StormPlayer from "./components/storm-player/StormPlayer";
+import StormPlayer from "./components/stormplayer/StormPlayer";
 
 const libraryConfig = {
   role: "player",
@@ -66,8 +66,8 @@ ReactDOM.render(
   <React.StrictMode>
     <StormPlayer
       containerID="player1"
-      width="1280"
-      height="720"
+      width={1280}
+      height={720}
       title="Your streaming video title"
       subtitle="Subtitle for your video"
       unmuteText="UNMUTE SOUND"

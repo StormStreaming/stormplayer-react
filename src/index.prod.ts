@@ -1,10 +1,9 @@
 /*
  * Types
  */
-export { IStormConfig } from "@stormstreaming/stormlibrary";
+export type { StormLibraryConfig } from "@stormstreaming/stormlibrary";
 
 /*
  * Components
  */
-
-export { default as StormPlayer } from "./components/storm-player/StormPlayer";
+export { default as StormPlayer } from "./components/stormplayer/StormPlayer";

@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "@stormstreaming/storm-player": {
-      "signature": "599f1c1ec820d541d71c7fba4e1477ed",
-      "file": true
-    }
-  }
-}
