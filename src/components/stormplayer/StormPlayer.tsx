@@ -1,11 +1,10 @@
 import React, {useEffect} from "react";
 
-import {GUIStormConfig} from "@stormstreaming/stormplayer";
 import {StormPlayer as StormPlayerClass} from "@stormstreaming/stormplayer";
 import {StormLibraryConfig} from "@stormstreaming/stormlibrary";
 import {StormPlayerConfig} from "@stormstreaming/stormplayer";
 
-type Props = GUIStormConfig & {
+type Props = StormPlayerConfig & {
     config: StormLibraryConfig;
 };
 

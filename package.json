@@ -1,6 +1,6 @@
 {
   "name": "@stormstreaming/stormplayer-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dedicated StormPlayer component for React.js",
   "private": false,
   "author": "Web-Anatomy s.c. <contact@web-anatomy.com>",
@@ -50,8 +50,8 @@
     "@material-ui/lab": "4.0.0-alpha.57",
     "@material-ui/pickers": "^3.3.10",
     "@reduxjs/toolkit": "^1.6.2",
-    "@stormstreaming/stormplayer": "^2.0.0",
-    "@stormstreaming/stormlibrary": "^2.0.0",
+    "@stormstreaming/stormplayer": "^2.2.0",
+    "@stormstreaming/stormlibrary": "^2.2.3",
     "dompurify": "^2.3.3",
     "final-form": "^4.20.2",
     "moment-timezone": "^0.5.33",
