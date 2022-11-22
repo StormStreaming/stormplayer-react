@@ -1,36 +1,31 @@
-import React, {useEffect} from "react";
+import { forwardRef, useEffect } from "react";
 
-import {StormPlayer as StormPlayerClass} from "@stormstreaming/stormplayer";
-import {StormLibraryConfig} from "@stormstreaming/stormlibrary";
-import {StormPlayerConfig} from "@stormstreaming/stormplayer";
+import {
+  StormPlayer as StormPlayerClass,
+  StormPlayerConfig,
+  StormLibraryConfig,
+} from "@stormstreaming/stormplayer";
 
-type Props = StormPlayerConfig & {
-    config: StormLibraryConfig;
+type Props = {
+  playerConfig: StormPlayerConfig;
+  libraryConfig: StormLibraryConfig;
 };
 
-const StormPlayer: React.FC<Props> = ({
-        containerID,
-        width,
-        height,
-        title,
-        subtitle,
-        unmuteText,
-        config,
-    }) => {
-    const guiConfig: StormPlayerConfig = {
-        containerID,
-        width,
-        height,
-        title,
-        subtitle,
-        unmuteText,
-    };
-
+const StormPlayer = forwardRef<StormPlayerClass, Props>(
+  ({ playerConfig, libraryConfig }, ref) => {
     useEffect(() => {
-        new StormPlayerClass(guiConfig, config);
+      const instance = new StormPlayerClass(playerConfig, libraryConfig);
+      if (ref) {
+        if (typeof ref === "function") {
+          ref(instance);
+        } else if (ref) {
+          ref.current = instance;
+        }
+      }
     }, []);
 
-    return <div id={containerID}/>;
-};
+    return <div id={playerConfig.containerID} />;
+  }
+);
 
 export default StormPlayer;
