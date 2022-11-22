@@ -1,9 +1,13 @@
 /*
  * Types
  */
-export type { StormLibraryConfig } from "@stormstreaming/stormlibrary";
+export {
+  type StormPlayerConfig,
+  type StormLibraryConfig,
+  StormPlayer as StormPlayerClass
+} from "@stormstreaming/stormplayer";
 
 /*
  * Components
  */
-export { default as StormPlayer } from "./components/stormplayer/StormPlayer";
+export { default as StormPlayer } from "./components/stormPlayer/StormPlayer";
