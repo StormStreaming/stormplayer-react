@@ -26,6 +26,36 @@ Browser compatibility
 
 For legacy browsers, HLS mode is used instead.
 
+
+## Server-side rendering (SSR)
+
+Both Storm JavaScript Library & Player (bedrocks for this React component) make use of DOM elements like window/video. In order to avoid errors related
+to SSR you might need to modify your code in the following manner:
+
+Import:
+```
+const StormPlayer = dynamic(() => import("@stormstreaming/stormplayer-react/src/components/stormPlayer/StormPlayer"), {
+  ssr: false,
+});
+```
+
+Code call:
+```
+{typeof window !== "undefined" && (
+            <StormPlayer
+              playerConfig={{
+                containerID: "player1",
+                width,
+                height,
+                title: "Your streaming video title",
+                subtitle: "Subtitle for your video",
+                unmuteText: "UNMUTE SOUND",
+              }}
+              libraryConfig={STORM_LIBRARY_CONFIG} 
+            />
+          )}
+```
+
 ## Resources
 
 - [Documentation](https://www.stormstreaming.com/docs)
