@@ -1,6 +1,6 @@
 {
   "name": "@stormstreaming/stormplayer-react",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Dedicated StormPlayer component for React.js",
   "private": false,
   "author": "Web-Anatomy s.c. <contact@web-anatomy.com>",
@@ -39,6 +39,7 @@
     "pre-:dev": "yarn clear && cp ./src/index.dev.tsx ./src/index.tsx",
     "pre-:prod": "yarn clear && cp ./src/index.prod.ts ./src/index.tsx",
     "dev": "yarn run pre-:dev && cross-env NODE_ENV=development rollup -c -w",
+    "prepublishOnly": "yarn build",
     "build:types": "yarn run tsc --project tsconfig.json && yarn tscpaths -p tsconfig.json -s ./src -o ./dist/types",
     "build": "yarn pre-:prod && yarn build:types && cross-env NODE_ENV=production rollup -c"
   },

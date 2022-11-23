@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.3
+
+Tiny update to package.json
+
 ## 1.0.2
 
 Updated Readme.md for SSR related issues,
