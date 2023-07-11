@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.0.0
+
+- Updated code to work with StormPlayer v3,
+- Changed license to BSD-like,
+
 ## 1.0.3
 
 Tiny update to package.json
