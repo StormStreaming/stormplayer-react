@@ -51,7 +51,7 @@
     "@material-ui/pickers": "^3.3.10",
     "@reduxjs/toolkit": "^1.6.2",
     "@stormstreaming/stormlibrary": "^3.0.0-beta.1",
-    "@stormstreaming/stormplayer": "^3.0.0-beta.0",
+    "@stormstreaming/stormplayer": "^3.0.0-beta.1",
     "dompurify": "^3.0.5",
     "final-form": "^4.20.2",
     "moment-timezone": "^0.5.33",
