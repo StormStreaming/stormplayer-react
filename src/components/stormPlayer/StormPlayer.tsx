@@ -28,4 +28,6 @@ const StormPlayer = forwardRef<StormPlayerClass, Props>(
   }
 );
 
+console.log("StormPlayer");
+
 export default StormPlayer;
