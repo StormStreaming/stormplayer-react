@@ -1,4 +1,4 @@
-import { forwardRef, useEffect } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 
 import {
   StormPlayer as StormPlayerClass,
@@ -13,21 +13,24 @@ type Props = {
 
 const StormPlayer = forwardRef<StormPlayerClass, Props>(
   ({ playerConfig, libraryConfig }, ref) => {
+    const isRendered = useRef(false);
+
     useEffect(() => {
-      const instance = new StormPlayerClass(playerConfig, libraryConfig);
-      if (ref) {
-        if (typeof ref === "function") {
-          ref(instance);
-        } else if (ref) {
-          ref.current = instance;
+      if (!isRendered.current) {
+        const instance = new StormPlayerClass(playerConfig, libraryConfig);
+        if (ref) {
+          if (typeof ref === "function") {
+            ref(instance);
+          } else if (ref) {
+            ref.current = instance;
+          }
         }
       }
+      isRendered.current = true;
     }, []);
 
     return <div id={playerConfig.containerID} />;
   }
 );
-
-console.log("StormPlayer");
 
 export default StormPlayer;
