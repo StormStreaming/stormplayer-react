@@ -1453,22 +1453,17 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
-"@stormstreaming/stormlibrary@3.0.0-beta.2":
+"@stormstreaming/stormlibrary@3.0.0-beta.3", "@stormstreaming/stormlibrary@^3.0.0-beta.3":
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@stormstreaming/stormlibrary/-/stormlibrary-3.0.0-beta.3.tgz#55d1e58dd25b8b5d90694a0e613af5f9e1c51fef"
+  integrity sha512-8RABE8+GtUPAtO1m5QDajhkjn7N5/3A0f5/I67k+Doj5Omlb0hUId4IzUMkpGKkKh3hTAA/p6rh02qMpKeJRFw==
+
+"@stormstreaming/stormplayer@^3.0.0-beta.2":
   version "3.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@stormstreaming/stormlibrary/-/stormlibrary-3.0.0-beta.2.tgz"
-  integrity "sha1-S1HYwNzLOMN60lk3pUQI7pvAn84= sha512-hnEPA/RXVLaXGZGHKgpKHLd0zlw1xAlqSjTzbkpdvHdDyI/OIiQlQ/7MEugAa+bChmkztozoUCM4y7mxoOJGAA=="
-
-"@stormstreaming/stormlibrary@^3.0.0-beta.1":
-  version "3.0.0-beta.1"
-  resolved "https://registry.npmjs.org/@stormstreaming/stormlibrary/-/stormlibrary-3.0.0-beta.1.tgz"
-  integrity sha512-cSuyaDcmsPCTIHF1pIRROgNyiVKy9RG1cXPr6R7alb7Zg7VW9QzAFii6Kxoxz9k/X25qwIC9FeoX4cKMYs5qWw==
-
-"@stormstreaming/stormplayer@^3.0.0-beta.1":
-  version "3.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@stormstreaming/stormplayer/-/stormplayer-3.0.0-beta.1.tgz"
-  integrity "sha1-jR7czhJ3SkHGwXtuGJ6Wjb/WloI= sha512-euJ0F5EU2q1uZAMNqDTmw/cxe3DuLLnr0g1J6Xn1PwnEiFcjctWpqQbwJuj2HrTVyl/TMcmfDn5Nwrq8b0xZCg=="
+  resolved "https://registry.yarnpkg.com/@stormstreaming/stormplayer/-/stormplayer-3.0.0-beta.2.tgz#dfe094bbe990d395b7e5c839da3c37189330c059"
+  integrity sha512-kRcy/jlmG9UjEtaWh54pp/OqkzdKNlEDC7KcJLHN/YEWK8APaZTY/aqAUaf0acE8h36LA21BMfyHIZmUkey8qg==
   dependencies:
-    "@stormstreaming/stormlibrary" "3.0.0-beta.2"
+    "@stormstreaming/stormlibrary" "3.0.0-beta.3"
 
 "@trivago/prettier-plugin-sort-imports@^2.0.4":
   version "2.0.4"

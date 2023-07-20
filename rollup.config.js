@@ -61,14 +61,13 @@ const config = {
           {
             format: "es",
             dir: pkg.module.replace(/\/index.js$/, ""),
-            sourcemap: true,
+            sourcemap: false,
             plugins: [terser()],
-            preserveModules: true,
           },
           {
             file: pkg.main,
             format: "cjs",
-            sourcemap: true,
+            sourcemap: false,
             plugins: [typescript()],
           },
         ]
