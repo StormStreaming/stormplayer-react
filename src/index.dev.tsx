@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import StormPlayer from "./components/stormPlayer/StormPlayer";
+import {StormLibraryConfig} from "@stormstreaming/stormplayer";
 
-const libraryConfig = {
+const libraryConfig:StormLibraryConfig = {
   configurationType: "embedded", // "embedded" or "gateway", please check doc for more info
   stream: {
     serverList: [
@@ -23,7 +24,7 @@ const libraryConfig = {
     ],
   },
   settings: {
-    autostart: true, // if true, video will start playing automatically, but will be muted too
+    autoStart: true, // if true, video will start playing automatically, but will be muted too
     restartOnError: true, // if something bad happens, player will try to restart
     reconnectTime: 1.0, // if a connection with a server fails, player will restart in given time
     enabledProtocols: ["MSE", "HLS"], // "MSE" for desktop, android browsers and iPad OS, "HLS" for iPhone iOS

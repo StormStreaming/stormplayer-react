@@ -34,7 +34,7 @@
     "resolveJsonModule": true,              
     "downlevelIteration": true,      
     "emitDeclarationOnly": true,
-    "declarationDir": "dist/types"
+    "declarationDir": "dist/types/"
   }, 
   "include": ["src", "setupTests.js", "mocks"],
   "exclude": ["node_modules", "dist", "src/**/*.test.*", "src/**/*.spec.*", "example-graphql"]
