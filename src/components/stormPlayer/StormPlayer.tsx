@@ -3,12 +3,12 @@ import { forwardRef, useEffect, useRef } from "react";
 import {
   StormPlayer as StormPlayerClass,
   StormPlayerConfig,
-  StormLibraryConfig,
+  StormStreamConfig,
 } from "@stormstreaming/stormplayer";
 
 type Props = {
   playerConfig: StormPlayerConfig;
-  libraryConfig: StormLibraryConfig;
+  libraryConfig: StormStreamConfig;
 };
 
 const StormPlayer = forwardRef<StormPlayerClass, Props>(

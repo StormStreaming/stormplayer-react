@@ -11,6 +11,7 @@ import json from "@rollup/plugin-json";
 import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import typescript from "@rollup/plugin-typescript";
+import terser from "@rollup/plugin-terser";
 
 const packageJSONRaw = fs.readFileSync('./package.json', 'utf8');
 const pkg = JSON.parse(packageJSONRaw);
@@ -62,14 +63,13 @@ const config = {
             {
               format: "es",
               dir: pkg.module.replace(/\/index.js$/, ""),
-              sourcemap: true,
-              //plugins: [terser()],
-              preserveModules: true,
+              sourcemap: false,
+              plugins: [terser()]
             },
             {
               file: pkg.main,
               format: "cjs",
-              sourcemap: true,
+              sourcemap: false,
               plugins: [typescript()],
             },
           ]

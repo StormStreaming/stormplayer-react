@@ -3,7 +3,7 @@
  */
 export {
   type StormPlayerConfig,
-  type StormLibraryConfig,
+  type StormStreamConfig,
   StormPlayer as StormPlayerClass
 } from "@stormstreaming/stormplayer";
 
