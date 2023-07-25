@@ -12,25 +12,25 @@ type Props = {
 };
 
 const StormPlayer = forwardRef<StormPlayerClass, Props>(
-  ({ playerConfig, libraryConfig }, ref) => {
-    const isRendered = useRef(false);
+    ({ playerConfig, libraryConfig }, ref) => {
+      const isRendered = useRef(false);
 
-    useEffect(() => {
-      if (!isRendered.current) {
-        const instance = new StormPlayerClass(playerConfig, libraryConfig);
-        if (ref) {
-          if (typeof ref === "function") {
-            ref(instance);
-          } else if (ref) {
-            ref.current = instance;
+      useEffect(() => {
+        if (!isRendered.current) {
+          const instance = new StormPlayerClass(playerConfig, libraryConfig);
+          if (ref) {
+            if (typeof ref === "function") {
+              ref(instance);
+            } else if (ref) {
+              ref.current = instance;
+            }
           }
         }
-      }
-      isRendered.current = true;
-    }, []);
+        isRendered.current = true;
+      }, []);
 
-    return <div id={playerConfig.containerID} />;
-  }
+      return <div id={playerConfig.containerID} />;
+    }
 );
 
 export default StormPlayer;

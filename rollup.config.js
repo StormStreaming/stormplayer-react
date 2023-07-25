@@ -58,7 +58,6 @@ const config = {
     nodeEnv !== "production" && livereload(),
   ],
   output:
-<<<<<<< HEAD
       nodeEnv === "production"
           ? [
             {
@@ -82,31 +81,6 @@ const config = {
               sourcemap: true,
             },
           ],
-=======
-    nodeEnv === "production"
-      ? [
-          {
-            format: "es",
-            dir: pkg.module.replace(/\/index.js$/, ""),
-            sourcemap: false,
-            plugins: [terser()],
-          },
-          {
-            file: pkg.main,
-            format: "cjs",
-            sourcemap: false,
-            plugins: [typescript()],
-          },
-        ]
-      : [
-          {
-            format: "iife",
-            name: "stormPlayer",
-            dir: pkg.module.replace(/\/index.js$/, ""),
-            sourcemap: true,
-          },
-        ],
->>>>>>> c1839057d8515836d7c9ea90b8441db866a441c5
 };
 
 export default config;

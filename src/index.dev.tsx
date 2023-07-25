@@ -1,25 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { StormLibraryConfig } from "@stormstreaming/stormlibrary";
-import { StormPlayerConfig } from "@stormstreaming/stormplayer";
-
 import StormPlayer from "./components/stormPlayer/StormPlayer";
 import {StormStreamConfig} from "@stormstreaming/stormplayer";
 
-<<<<<<< HEAD
 const libraryConfig:StormStreamConfig = {
-=======
-const playerConfig: StormPlayerConfig = {
-  containerID: "player1",
-  width: 1280,
-  height: 720,
-  title: "Your streaming video title",
-  subtitle: "Subtitle for your video",
-};
-
-const libraryConfig: StormLibraryConfig = {
->>>>>>> c1839057d8515836d7c9ea90b8441db866a441c5
   configurationType: "embedded", // "embedded" or "gateway", please check doc for more info
   stream: {
     serverList: [
@@ -44,29 +29,25 @@ const libraryConfig: StormLibraryConfig = {
     debug: {
       console: {
         // console output
-        enabled: false, // if console output is activated
+        enabled: true, // if console output is activated
       },
     },
   },
 };
 
 ReactDOM.render(
-  <React.StrictMode>
-<<<<<<< HEAD
-    <StormPlayer
-      playerConfig={{
-        containerID: "player1",
-        aspectRatio:"16:9",
-        width: "100%",
-        height: "100%",
-        title: "Your streaming video title",
-        subtitle: "Subtitle for your video",
-      }}
-      libraryConfig={libraryConfig}
-    />
-=======
-    <StormPlayer playerConfig={playerConfig} libraryConfig={libraryConfig} />
->>>>>>> c1839057d8515836d7c9ea90b8441db866a441c5
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+      <StormPlayer
+          playerConfig={{
+            containerID: "player1",
+            aspectRatio:"16:9",
+            width: "100%",
+            height: "100%",
+            title: "Your streaming video title",
+            subtitle: "Subtitle for your video",
+          }}
+          libraryConfig={libraryConfig}
+      />
+    </React.StrictMode>,
+    document.getElementById("root")
 );

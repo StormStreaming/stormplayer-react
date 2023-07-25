@@ -4,6 +4,7 @@
 
 - Updated code to work with StormPlayer v3,
 - Changed license to BSD-like,
+- Updated samples,
 
 ## 1.0.3
 
