@@ -16,6 +16,11 @@ To get started checkout examples and documentation at https://www.stormstreaming
 
 3. Manually - if you are clueless about NPM/Yarn or simply want to test it out, just grab`/dist/iife/index.js` file and embed it on your website.
 
+Requirements
+---------------------
+* Node 15.4.0+
+* React 17.0.1+
+
 Browser compatibility
 ---------------------
 * Edge 12+
