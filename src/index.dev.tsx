@@ -40,6 +40,7 @@ ReactDOM.render(
     <StormPlayer
       playerConfig={{
         containerID: "player1",
+        aspectRatio:"16:9",
         width: "100%",
         height: "100%",
         title: "Your streaming video title",
