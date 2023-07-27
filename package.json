@@ -1,11 +1,11 @@
 {
   "name": "@stormstreaming/stormplayer-react",
-  "version": "2.0.0-beta.7",
+  "version": "2.0.0-alpha.1",
   "description": "Dedicated StormPlayer component for React.js",
   "private": false,
   "author": "Web-Anatomy s.c. <contact@web-anatomy.com>",
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/src/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "type": "module",
   "files": [
@@ -40,6 +40,7 @@
     "pre-:dev": "npm run clear && cp ./src/index.dev.tsx ./src/index.tsx",
     "pre-:prod": "npm run clear && cp ./src/index.prod.ts ./src/index.tsx",
     "dev": "npm run pre-:dev && cross-env NODE_ENV=development rollup -c -w",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build",
     "compile:ts": "cross-env NODE_ENV=production rollup -c rollup.config.js",
     "compile:types": "tsc -p tsconfig.json",
@@ -47,8 +48,8 @@
     "build": "npm run pre-:prod && npm run compile"
   },
   "dependencies": {
-    "@stormstreaming/stormlibrary": "^3.0.0-beta.8",
-    "@stormstreaming/stormplayer": "^3.0.0-beta.6"
+    "@stormstreaming/stormlibrary": "^3.0.0-alpha.2",
+    "@stormstreaming/stormplayer": "^3.0.0-alpha.1"
   },
   "peerDependencies": {
     "react": ">=17.0.2"
