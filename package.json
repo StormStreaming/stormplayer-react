@@ -1,6 +1,6 @@
 {
   "name": "@stormstreaming/stormplayer-react",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-rc.2",
   "description": "Dedicated StormPlayer component for React.js",
   "private": false,
   "author": "Web-Anatomy s.c. <contact@web-anatomy.com>",
@@ -48,8 +48,7 @@
     "build": "npm run pre-:prod && npm run compile"
   },
   "dependencies": {
-    "@stormstreaming/stormlibrary": "^3.0.0-alpha.2",
-    "@stormstreaming/stormplayer": "^3.0.0-alpha.1"
+    "@stormstreaming/stormplayer": "3.0.0-rc.4"
   },
   "peerDependencies": {
     "react": ">=17.0.2"

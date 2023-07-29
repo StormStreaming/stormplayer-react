@@ -8,16 +8,16 @@ import {
 
 type Props = {
   playerConfig: StormPlayerConfig;
-  libraryConfig: StormStreamConfig;
+  streamConfig: StormStreamConfig;
 };
 
 const StormPlayer = forwardRef<StormPlayerClass, Props>(
-    ({ playerConfig, libraryConfig }, ref) => {
+    ({ playerConfig, streamConfig }, ref) => {
       const isRendered = useRef(false);
 
       useEffect(() => {
         if (!isRendered.current) {
-          const instance = new StormPlayerClass(playerConfig, libraryConfig);
+          const instance = new StormPlayerClass(playerConfig, streamConfig);
           if (ref) {
             if (typeof ref === "function") {
               ref(instance);
