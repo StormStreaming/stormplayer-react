@@ -64,6 +64,7 @@ const config = {
               format: "es",
               dir: pkg.module.replace(/\/index.js$/, ""),
               sourcemap: false,
+              plugins:[terser()]
             },
             {
               file: pkg.main,
@@ -78,7 +79,6 @@ const config = {
               name: "stormPlayer",
               dir: pkg.module.replace(/\/index.js$/, ""),
               sourcemap: true,
-
             },
           ],
 };
