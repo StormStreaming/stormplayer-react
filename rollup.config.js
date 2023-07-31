@@ -58,28 +58,29 @@ const config = {
     nodeEnv !== "production" && livereload(),
   ],
   output:
-    nodeEnv === "production"
-      ? [
-          {
-            format: "es",
-            dir: pkg.module.replace(/\/index.js$/, ""),
-            sourcemap: false,
-          },
-          {
-            file: pkg.main,
-            format: "cjs",
-            sourcemap: false,
-            plugins: [typescript()],
-          },
-        ]
-      : [
-          {
-            format: "iife",
-            name: "stormPlayer",
-            dir: pkg.module.replace(/\/index.js$/, ""),
-            sourcemap: true,
-          },
-        ],
+      nodeEnv === "production"
+          ? [
+            {
+              format: "es",
+              dir: pkg.module.replace(/\/index.js$/, ""),
+              sourcemap: false,
+              plugins:[terser()]
+            },
+            {
+              file: pkg.main,
+              format: "cjs",
+              sourcemap: false,
+              plugins: [typescript()],
+            },
+          ]
+          : [
+            {
+              format: "iife",
+              name: "stormPlayer",
+              dir: pkg.module.replace(/\/index.js$/, ""),
+              sourcemap: true,
+            },
+          ],
 };
 
 export default config;
