@@ -3,7 +3,7 @@ import { forwardRef, useEffect, useRef } from "react";
 import {
   StormPlayer as StormPlayerClass,
   StormPlayerConfig,
-  StormStreamConfig,
+  StormStreamConfig
 } from "@stormstreaming/stormplayer";
 
 type Props = {
