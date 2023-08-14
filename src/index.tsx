@@ -4,6 +4,7 @@
 export {
   type StormPlayerConfig,
   type StormStreamConfig,
+  type StormPlayerEvent,
   type StormPlayerListener,
   type StormMetaDataItem,
   type StormLibraryEvent,
