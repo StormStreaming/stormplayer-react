@@ -49,7 +49,6 @@ const Asd = () => {
   });
   useEffect(() => {
     setTimeout(() => {
-      console.log("Zmieniam `playerConfig` w komponencie konsumującym playera");
       setPlayerConfig((prev) => ({ ...prev, title: "asde", subtitle: "asd" }));
     }, 3000);
   }, []);

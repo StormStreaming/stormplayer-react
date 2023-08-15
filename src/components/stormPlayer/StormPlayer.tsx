@@ -3,7 +3,7 @@ import { forwardRef, useEffect, useRef } from "react";
 import {
   StormPlayer as StormPlayerClass,
   StormPlayerConfig,
-  StormStreamConfig
+  StormStreamConfig,
 } from "@stormstreaming/stormplayer";
 
 type Props = {
@@ -19,20 +19,20 @@ const StormPlayer = forwardRef<StormPlayerClass, Props>(
     useEffect(() => {
       if (!isRendered.current) {
         const instance = new StormPlayerClass(playerConfig, streamConfig);
+        playerRef.current = instance;
+
         if (ref) {
           if (typeof ref === "function") {
             ref(instance);
           } else if (ref) {
             ref.current = instance;
           }
-          playerRef.current = instance;
         }
       }
       isRendered.current = true;
     }, []);
 
     useEffect(() => {
-      console.log("komponent wywołuje `setPlayerConfig`");
       playerRef.current?.setPlayerConfig(playerConfig);
     }, [playerConfig]);
 
