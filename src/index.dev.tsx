@@ -41,6 +41,46 @@ const playerConfig:StormPlayerConfig = {
     height: "100%",
     title: "Your streaming video title",
     subtitle: "Subtitle for your video",
+    demoMode:true,
+    interface: {
+        showBigPlayBTN: true,
+        showTimeline: true,
+        autoGUIHide: true,
+        autoGUIHideTime: 3,
+        nativeMobileGUI:  true
+    },
+    style: {
+        loaderColor: "#ffffff",
+        progressBar: {
+            gradientColor1: "#ff915a",
+            gradientColor2: "#ff785a"
+        },
+        cuePoint: {
+            gradientColor1: "#ff915a",
+            gradientColor2: "#ff785a"
+        },
+        unmuteLabel: {
+            backgroundColor: "#ffffff",
+            primaryColor: "#000000"
+        },
+        icons: {
+            primaryColor: "#ffffff",
+            secondaryColor: "#000000",
+            activeColor: "#ff915a",
+            errorColor: "#df0f33"
+        },
+        backgroundColor: "#000000",
+        text: {
+            titleColor: "#ffffff",
+            subtitleColor: "#ffffff",
+            errorColor: "#ffffff"
+        },
+        borderRadius: "10px",
+        watermark: {
+            imgURL: "image_path.jpg",
+            position: "bottom_right"
+        }
+    }
 };
 
 ReactDOM.render(
