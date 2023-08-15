@@ -9,7 +9,7 @@ import {
 import StormPlayer from "./components/stormPlayer/StormPlayer";
 
 const Asd = () => {
-  const [streamConfig, setStreamConfig] = useState<StormStreamConfig>({
+  const [streamConfig, _setStreamConfig] = useState<StormStreamConfig>({
     configurationType: "embedded", // "embedded" or "gateway", please check doc for more info
     stream: {
       serverList: [
@@ -45,7 +45,7 @@ const Asd = () => {
     width: "100%",
     height: "100%",
     title: "Your streaming video title",
-    subtitle: "Subtitle for your vssideo",
+    subtitle: "Subtitle for your video",
   });
   useEffect(() => {
     setTimeout(() => {

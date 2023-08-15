@@ -9,7 +9,7 @@ import {
 import StormPlayer from "./components/stormPlayer/StormPlayer";
 
 const Asd = () => {
-  const [streamConfig, setStreamConfig] = useState<StormStreamConfig>({
+  const [streamConfig, _setStreamConfig] = useState<StormStreamConfig>({
     configurationType: "embedded", // "embedded" or "gateway", please check doc for more info
     stream: {
       serverList: [
