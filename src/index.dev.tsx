@@ -30,27 +30,25 @@ const Asd = () => {
     },
     settings: {
       autoStart: true, // if true, video will start playing automatically, but will be muted too
-      debug: {
-        console: {
-          // console output
-          enabled: true, // if console output is activated
-        },
-      },
     },
   });
 
   const [playerConfig, setPlayerConfig] = useState<StormPlayerConfig>({
     containerID: "player1",
     aspectRatio: "16:9",
+    posterURL:"logo.svg",
+    demoMode: true,
     width: "100%",
-    height: "100%",
-    title: "Your streaming video title",
+    title: "Your streaming title",
     subtitle: "Subtitle for your video",
+    style: {
+      backgroundColor:"#777777",
+    }
   });
   useEffect(() => {
-    setTimeout(() => {
-      setPlayerConfig((prev) => ({ ...prev, title: "asde", subtitle: "asd" }));
-    }, 3000);
+    setInterval(() => {
+      setPlayerConfig((prev) => ({ ...prev, title: "Bardzo dlugi tytul, ktory sie tutaj po prostu nie zmiesci", subtitle: undefined, posterURL:"poster.jpg" }));
+    }, 2000);
   }, []);
 
   return (

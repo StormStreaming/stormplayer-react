@@ -1460,10 +1460,10 @@
     "@types/lodash.debounce" "^4.0.7"
     lodash.debounce "^4.0.8"
 
-"@stormstreaming/stormplayer@3.0.0-rc.16":
-  version "3.0.0-rc.16"
-  resolved "https://registry.yarnpkg.com/@stormstreaming/stormplayer/-/stormplayer-3.0.0-rc.16.tgz#221bd11db83f1bf5a1f403220b23ace57fb173d6"
-  integrity sha512-1PsZEkQjLHruTAWBuC2UF9OwvFYYyvNK/gqgVipzkTsM1gfLuYpH15QUsZEfJPg10vT1bveeJKz2Wb7aw6kp1g==
+"@stormstreaming/stormplayer@3.0.0-rc.19":
+  version "3.0.0-rc.19"
+  resolved "https://registry.yarnpkg.com/@stormstreaming/stormplayer/-/stormplayer-3.0.0-rc.19.tgz#adb9783c5ecccaf84da6ffc38e99668e0a7776d3"
+  integrity sha512-uzrFBAJ7u2EFmFIxais1swnx21guwZMur+f7hNQw4qCsZnH3ot4JQb+IOZWTPSW0ukeTSKge6A0b5Exo1eBmZw==
   dependencies:
     "@stormstreaming/stormlibrary" "3.0.0-rc.9"
     "@types/lodash.debounce" "^4.0.7"
