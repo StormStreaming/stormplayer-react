@@ -1452,22 +1452,23 @@
   resolved "https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.27.8.tgz"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
-"@stormstreaming/stormlibrary@3.0.0-rc.9":
-  version "3.0.0-rc.9"
-  resolved "https://registry.yarnpkg.com/@stormstreaming/stormlibrary/-/stormlibrary-3.0.0-rc.9.tgz#ab5f24be5c390df9a36a88b08f36507ddaa81cf1"
-  integrity sha512-5PkQKN/PTNd/dqUOSJ9YXDT0UM27IqNWo7wg8XVRbgpWZNtZmHFGkLBP/l/fR1TAEidOatHmVzvNSLNiwjfvbA==
+"@stormstreaming/stormlibrary@4.0.0-alpha.7":
+  version "4.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@stormstreaming/stormlibrary/-/stormlibrary-4.0.0-alpha.7.tgz#a91c945a9ed691a9b5759e035a8d967ab2990563"
+  integrity sha512-dKtedcRxaXxs4T+NmL6lvRpTBM/Up/p1ya077b79wJiWrxOljmXK1YVpUB2sfNP/9p3RDsY8eSk3Hj1AjxPK/Q==
   dependencies:
     "@types/lodash.debounce" "^4.0.7"
     lodash.debounce "^4.0.8"
 
-"@stormstreaming/stormplayer@3.0.0-rc.19":
-  version "3.0.0-rc.19"
-  resolved "https://registry.yarnpkg.com/@stormstreaming/stormplayer/-/stormplayer-3.0.0-rc.19.tgz#adb9783c5ecccaf84da6ffc38e99668e0a7776d3"
-  integrity sha512-uzrFBAJ7u2EFmFIxais1swnx21guwZMur+f7hNQw4qCsZnH3ot4JQb+IOZWTPSW0ukeTSKge6A0b5Exo1eBmZw==
+"@stormstreaming/stormplayer@4.0.0-alpha.3":
+  version "4.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@stormstreaming/stormplayer/-/stormplayer-4.0.0-alpha.3.tgz#7d39013cbff3c5bbe1fea8d475fc5698336c1dbf"
+  integrity sha512-7ufYw+SW2tMRsFO+yoK+A0DYYU9ohPrKC13uiCcomMPQ9p9awYHAjsv81EVN7UNCGaa07E362i/wZEMPJqgxbQ==
   dependencies:
-    "@stormstreaming/stormlibrary" "3.0.0-rc.9"
+    "@stormstreaming/stormlibrary" "4.0.0-alpha.7"
     "@types/lodash.debounce" "^4.0.7"
     lodash.debounce "^4.0.8"
+    luxon "^3.4.0"
 
 "@testing-library/dom@^8.0.0":
   version "8.20.1"
@@ -3678,6 +3679,11 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
+
+luxon@^3.4.0:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.4.1.tgz#9147374b2c539e7893f906c420e9b080b59c5457"
+  integrity sha512-2USspxOCXWGIKHwuQ9XElxPPYrDOJHDQ5DQ870CoD+CxJbBnRDIBCfhioUJJjct7BKOy80Ia8cVstIcIMb/0+Q==
 
 lz-string@^1.5.0:
   version "1.5.0"
