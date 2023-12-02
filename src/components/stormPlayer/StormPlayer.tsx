@@ -2,9 +2,11 @@ import { forwardRef, useEffect, useRef } from "react";
 
 import {
   StormPlayer as StormPlayerClass,
-  StormPlayerConfig,
   StormStreamConfig,
 } from "@stormstreaming/stormplayer";
+import { StormPlayerConfig } from "../../types";
+import { CONTAINER_ID } from "@app/constants";
+import { generateRandomId } from "@app/utils";
 
 type Props = {
   playerConfig: StormPlayerConfig;
@@ -14,12 +16,21 @@ type Props = {
 const StormPlayer = forwardRef<StormPlayerClass, Props>(
   ({ playerConfig, streamConfig }, ref) => {
     const playerRef = useRef<StormPlayerClass | null>(null);
+    const containerRef = useRef<HTMLDivElement | null>(null);
     const isRendered = useRef(false);
 
     useEffect(() => {
-      if (!isRendered.current) {
-        const instance = new StormPlayerClass(playerConfig, streamConfig);
-        console.log("odpaliło nową instancję!");
+      if (!isRendered.current && containerRef.current) {
+        const newContainerId = CONTAINER_ID.replace(
+          "{{id}}",
+          generateRandomId()
+        );
+        containerRef.current?.setAttribute("id", newContainerId);
+
+        const instance = new StormPlayerClass(
+          { ...playerConfig, containerID: newContainerId },
+          streamConfig
+        );
         playerRef.current = instance;
 
         if (ref) {
@@ -34,14 +45,10 @@ const StormPlayer = forwardRef<StormPlayerClass, Props>(
     }, []);
 
     useEffect(() => {
-      playerRef.current?.setPlayerConfig(playerConfig);
-    }, [playerConfig]);
-
-    useEffect(() => {
       playerRef.current?.setStreamConfig(streamConfig);
     }, [streamConfig]);
 
-    return <div id={playerConfig.containerID} />;
+    return <div ref={containerRef} />;
   }
 );
 

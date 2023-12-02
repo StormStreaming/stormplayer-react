@@ -2,15 +2,16 @@
  * Types
  */
 export {
-  type StormPlayerConfig,
   type StormStreamConfig,
   type StormPlayerEvent,
   type StormPlayerListener,
   type StormMetaDataItem,
   type StormLibraryEvent,
   type StormLibraryListener,
-  StormPlayer as StormPlayerClass
+  StormPlayer as StormPlayerClass,
 } from "@stormstreaming/stormplayer";
+
+export { type StormPlayerConfig } from "./types";
 
 /*
  * Components

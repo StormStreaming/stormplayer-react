@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-import {
-  StormPlayerConfig,
-  StormStreamConfig,
-} from "@stormstreaming/stormplayer";
-
+import { StormStreamConfig } from "@stormstreaming/stormplayer";
 import StormPlayer from "./components/stormPlayer/StormPlayer";
+import { StormPlayerConfig } from "./types";
 
 const Asd = () => {
   const [streamConfig, _setStreamConfig] = useState<StormStreamConfig>({
@@ -31,30 +28,22 @@ const Asd = () => {
     settings: {
       autoStart: true, // if true, video will start playing automatically, but will be muted too
       debug: {
-        console:{
-          enabled:true
-        }
-      }
+        console: {
+          enabled: true,
+        },
+      },
     },
-
   });
 
-  const [playerConfig, setPlayerConfig] = useState<StormPlayerConfig>({
-    containerID: "player1",
+  const playerConfig: StormPlayerConfig = {
     aspectRatio: "16:9",
-    posterURL:"logo.svg",
     width: "100%",
     title: "Your streaming title",
     subtitle: "Subtitle for your video",
     style: {
-      backgroundColor:"#777777",
-    }
-  });
-  useEffect(() => {
-    setInterval(() => {
-      setPlayerConfig((prev) => ({ ...prev, title: "Bardzo dlugi tytul, ktory sie tutaj po prostu nie zmiesci", subtitle: undefined, posterURL:"poster.jpg" }));
-    }, 2000);
-  }, []);
+      backgroundColor: "#777777",
+    },
+  };
 
   return (
     <React.StrictMode>
