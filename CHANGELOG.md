@@ -1,5 +1,10 @@
 # Change Log
 
+## 3.0.0
+
+- Updated code to work with StormPlayer v4,
+- Updated samples,
+
 ## 2.0.0
 
 - Updated code to work with StormPlayer v3,

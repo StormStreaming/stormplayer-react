@@ -15,7 +15,7 @@ const Asd = () => {
       serverList: [
         // list of streaming server, 2nd, 3rd etc. will be used as backup
         {
-          host: "cdn-eu01.stormstreaming.com",
+          host: "cdn-eu01.stormstreaming.com1",
           application: "live",
           port: 443,
           ssl: true,
@@ -30,14 +30,19 @@ const Asd = () => {
     },
     settings: {
       autoStart: true, // if true, video will start playing automatically, but will be muted too
+      debug: {
+        console:{
+          enabled:true
+        }
+      }
     },
+
   });
 
   const [playerConfig, setPlayerConfig] = useState<StormPlayerConfig>({
     containerID: "player1",
     aspectRatio: "16:9",
     posterURL:"logo.svg",
-    demoMode: true,
     width: "100%",
     title: "Your streaming title",
     subtitle: "Subtitle for your video",
