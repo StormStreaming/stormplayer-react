@@ -19,6 +19,7 @@ const StormPlayer = forwardRef<StormPlayerClass, Props>(
     useEffect(() => {
       if (!isRendered.current) {
         const instance = new StormPlayerClass(playerConfig, streamConfig);
+        console.log("odpaliło nową instancję!");
         playerRef.current = instance;
 
         if (ref) {
