@@ -45,8 +45,12 @@ const StormPlayer = forwardRef<StormPlayerClass, Props>(
     }, []);
 
     useEffect(() => {
+      playerRef.current?.setPlayerConfig({...streamConfig, containerID:playerRef.current?.getRawPlayerConfig().containerID});
+    }, [JSON.stringify(playerConfig)]);
+
+    useEffect(() => {
       playerRef.current?.setStreamConfig(streamConfig);
-    }, [streamConfig]);
+    }, [JSON.stringify(streamConfig)]);
 
     return <div ref={containerRef} />;
   }
