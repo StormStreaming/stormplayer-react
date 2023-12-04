@@ -7,26 +7,21 @@ import { StormPlayerConfig } from "./types";
 
 const Asd = () => {
   const [streamConfig, _setStreamConfig] = useState<StormStreamConfig>({
-    configurationType: "embedded", // "embedded" or "gateway", please check doc for more info
+    configurationType: "gateway", // "embedded" or "gateway", please check doc for more info
     stream: {
       serverList: [
         // list of streaming server, 2nd, 3rd etc. will be used as backup
         {
-          host: "cdn-eu01.stormstreaming.com1",
+          host: "test.stormstreaming.com",
           application: "live",
           port: 443,
           ssl: true,
         },
       ],
-      sourceList: [
-        {
-          protocol: "storm", // either "storm" (stream was published to the server), or "rtmp". RTMP (external source)
-          streamKey: "test", // name of the stream
-        },
-      ],
+      streamKey:"6530cdd463abad1bc9ab78bbfb728aaa52b8e779",
     },
     settings: {
-      autoStart: true, // if true, video will start playing automatically, but will be muted too
+      //autoStart: true, // if true, video will start playing automatically, but will be muted too
       debug: {
         console: {
           enabled: true,
