@@ -46,8 +46,6 @@ const StormPlayer = forwardRef<StormPlayerClass, Props>(
 
     useEffect(() => {
         if (isRendered.current) {
-            console.log("setPlayerConfig będzie odpalony", playerRef.current);
-
             playerRef.current?.setPlayerConfig({
                 ...playerConfig,
                 containerID: playerRef.current?.getRawPlayerConfig().containerID
@@ -57,7 +55,6 @@ const StormPlayer = forwardRef<StormPlayerClass, Props>(
 
     useEffect(() => {
         if (isRendered.current) {
-            console.log("setStreamConfig będzie odpalony", playerRef.current);
             playerRef.current?.setStreamConfig(streamConfig);
         }
     }, [JSON.stringify(streamConfig)]);
