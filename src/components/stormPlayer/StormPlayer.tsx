@@ -42,6 +42,11 @@ const StormPlayer = forwardRef<StormPlayerClass, Props>(
         }
       }
       isRendered.current = true;
+
+        return () => {
+            playerRef.current?.destroy()
+        }
+
     }, []);
 
     useEffect(() => {

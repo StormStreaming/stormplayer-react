@@ -1452,20 +1452,20 @@
   resolved "https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.27.8.tgz"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
-"@stormstreaming/stormlibrary@4.0.0-beta.0":
-  version "4.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@stormstreaming/stormlibrary/-/stormlibrary-4.0.0-beta.0.tgz#19d2b3d92acb45fa21422b0d3a8da1a044c1119f"
-  integrity sha512-yBGq45VCRfLYeGigWnaGkfqYCHOCiZWb9nOQMsiL6+K1BoGD71L3eJYEpHBP02xnUKi/xpQLpUlrxd3Zhov6RQ==
+"@stormstreaming/stormlibrary@4.0.0-beta.9":
+  version "4.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@stormstreaming/stormlibrary/-/stormlibrary-4.0.0-beta.9.tgz#9f2d345230373bcf624a720e0a64ab761442dc00"
+  integrity sha512-cdDpLvXFcGdnAyg0kvO9/XjcaQvlffnqxZIEbZGpyPQj1lnGc33yd3C0EWLx5YtFFsk7neoVL3mHxhpE2Xei1g==
   dependencies:
     "@types/lodash.debounce" "^4.0.7"
     lodash.debounce "^4.0.8"
 
-"@stormstreaming/stormplayer@4.0.0-beta.2":
-  version "4.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@stormstreaming/stormplayer/-/stormplayer-4.0.0-beta.2.tgz#14b579c7bc43ad040333d2adae1e9fcbfb9484b9"
-  integrity sha512-lXD9wTquC3V82aq2pBjYmkSOL5ZXhC3g5Nhz1y4OsXSaCG8xU2dH1+bXaDtYGyeu7adUkc+XHmUqfM9xwlY4nw==
+"@stormstreaming/stormplayer@4.0.0-beta.9":
+  version "4.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@stormstreaming/stormplayer/-/stormplayer-4.0.0-beta.9.tgz#23f4416302d0186f6cc6fe52c41c9f600ab7abf1"
+  integrity sha512-YcIvox7ySFiQfDt+KMQB94VACeHvNy8Jx9hzQ2fgqa9w9Q7EzO3NnXCYQXGN0bn1UNZ9ZRgKlcUhlDvAh/9NKw==
   dependencies:
-    "@stormstreaming/stormlibrary" "4.0.0-beta.0"
+    "@stormstreaming/stormlibrary" "4.0.0-beta.9"
     "@types/lodash.debounce" "^4.0.7"
     lodash.debounce "^4.0.8"
     luxon "^3.4.0"
